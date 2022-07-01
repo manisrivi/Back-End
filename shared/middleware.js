@@ -5,7 +5,7 @@ const middleware = {
   },
 
   maintenance(req, res, next) {
-    process.env.IsMaintenance == "true"
+    process.env.IsMaintenance == "false"
       ? res.send({ message: "Site Under Maintenance" })
       : next();
   },
