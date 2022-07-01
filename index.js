@@ -26,6 +26,7 @@ config();
       
         // routes
         app.get("/", (req, res) => res.send("Welcome To API World"));
+        app.use("/auth", routes.authRoutes);
         app.use("/users", routes.usersRoutes);
         app.use("/posts", routes.postsRoutes);
         app.use("/comments", routes.commentsRoutes);
