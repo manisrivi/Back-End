@@ -1,3 +1,5 @@
+const IsMaintenance = false;
+
 const middleware = {
   logging(req, res, next) {
     console.log(`${new Date()} - ${req.method} - ${req.url}`);
@@ -5,7 +7,7 @@ const middleware = {
   },
 
   maintenance(req, res, next) {
-    process.env.IsMaintenance == "false"
+    IsMaintenance
       ? res.send({ message: "Site Under Maintenance" })
       : next();
   },
