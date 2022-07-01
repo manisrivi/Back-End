@@ -1,0 +1,30 @@
+Create a index.js file
+
+install express package 
+
+install nodemon package (Its like a live server)
+
+Goto package.json replace for "start": "nodemon index.js"
+
+inbuild package method is   1. sample.get() 
+                            2. sample.post()
+                            3. sample.put()
+                            4. sample.delete()
+
+C/R/U/D <===> middleware <===> Webdata or Json data
+
+middleware is CRUD request to data intermediate request its use to take message or maintenance work or make any perform 
+
+create seperate folder stucture 
+
+inbuild router function available so we can use import and export 
+
+create mongoDB driver npm package
+
+import the mongoDB in our file
+
+try catch use must
+
+Joi validation 
+
+// S9S2DWM1qVui2Ftc
